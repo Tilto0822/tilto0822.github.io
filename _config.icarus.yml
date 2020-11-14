@@ -1,0 +1,155 @@
+version: 4.0.0
+variant: default
+logo: /img/logo.svg
+head:
+    favicon: /img/favicon.svg
+    # Web application manifests configuration
+    # https://developer.mozilla.org/en-US/docs/Web/Manifest
+    manifest:
+        name: Tilto's Blog
+        short_name: Tilto
+        start_url: https://tilto0822.github.io/
+        display: standalone
+        icons:
+            -
+                # The path to the image file
+                src: ''
+                # A string containing space-separated image dimensions
+                sizes: ''
+                # A hint as to the media type of the image
+                type: 
+    # Structured data of the page
+    # https://developers.google.com/search/docs/guides/intro-structured-data
+    structured_data:
+        title: Tilto's Blog
+        description: '이것저것 끄적이는 공간입니다 :)'
+        url: https://tilto0822.github.io/
+        author: Tilto0822
+        image: 
+    # Additional HTML meta tags in an array
+    meta:
+        # Meta tag specified in <attribute>=<value> style
+        # E.g., name=theme-color;content=#123456 => <meta name="theme-color" content="#123456">
+        - ''
+navbar:
+    menu:
+        Home: /
+        Categories: /categories
+        Tags: /tags
+    links:
+        GitHub:
+            icon: fab fa-github
+            url: 'https://github.com/Tilto0822/tilto0822.github.io'
+# Page footer configurations
+footer:
+    links:
+        Creative Commons:
+            icon: fab fa-creative-commons
+            url: 'https://creativecommons.org/'
+        Attribution 4.0 International:
+            icon: fab fa-creative-commons-by
+            url: 'https://creativecommons.org/licenses/by/4.0/'
+# Article related configurations
+article:
+    highlight:
+        theme: atom-one-dark
+        clipboard: true
+        fold: unfolded
+    readtime: true
+    licenses:
+        Creative Commons:
+            icon: fab fa-creative-commons
+            url: 'https://creativecommons.org/'
+        Attribution:
+            icon: fab fa-creative-commons-by
+            url: 'https://creativecommons.org/licenses/by/4.0/'
+        Noncommercial:
+            icon: fab fa-creative-commons-nc
+            url: 'https://creativecommons.org/licenses/by-nc/4.0/'
+search:
+    type: insight
+# Comment plugin configurations
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
+comment:
+    type: disqus
+    shortname: tilto0822
+# Donate plugin configurations
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
+#donates:
+    # "Buy me a coffee" donate button configurations
+    #-
+        #type: buymeacoffee
+        # URL to the "Buy me a coffee" page
+        #url: ''
+    # Patreon donate button configurations
+    #-
+        #type: patreon
+        # URL to the Patreon page
+        #url: ''
+sidebar:
+    left:
+        sticky: true
+    right:
+        sticky: false
+# Sidebar widget configurations
+# http://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/
+widgets:
+    -
+        position: left
+        type: profile
+        author: Tilto_
+        location: South Korea
+        avatar: 
+        avatar_rounded: true
+        gravatar: me@tilto.kro.kr
+    -
+        position: left
+        type: toc
+        index: true
+        collapsed: true
+        depth: 3
+    -
+        position: left
+        type: links
+        links:
+            Github: 'https://github.com/Tilto0822'
+            Develable: 'https://develable.xyz'
+    -
+        position: left
+        type: categories
+    -
+        position: left
+        type: recent_posts
+    -
+        position: left
+        type: tags
+    #-
+        #position: left
+        #type: adsense
+        # AdSense client ID
+        #client_id: ''
+        # AdSense AD unit ID
+        #slot_id: ''
+# Plugin configurations
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/
+plugins:
+    animejs: true
+    back_to_top: true
+    cookie_consent:
+        type: info
+        theme: edgeless
+        static: false
+        position: bottom-right
+        policyLink: 'https://www.cookiesandyou.com/'
+    gallery: true
+    # Google Analytics plugin settings
+    # https://analytics.google.com
+    google_analytics:
+        # Google Analytics tracking ID
+        tracking_id: G-GEQ2ZWPVYV
+    progressbar: true
+    busuanzi: true
+providers:
+    cdn: jsdelivr
+    fontcdn: google
+    iconcdn: fontawesome
